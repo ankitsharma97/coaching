@@ -1,0 +1,129 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    background: url('coaching-2738523_1280.jpg') no-repeat center center/cover;
+    padding: 10px;
+    color: rgb(54, 54, 222);
+}
+
+.img1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.img1:hover {
+    height: 150px;
+    width: 150px;
+    border: 2px solid red;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+}
+
+.tabs a {
+    color: black;
+    text-decoration: dashed;
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+
+.tabs a:hover {
+    background-color: blue;
+    color: rgb(240, 240, 15);
+}
+
+.parent {
+    background-color: #ffdb58;
+    padding: 20px;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.child {
+    border-radius: 10px;
+    border: 3px solid;
+    background-color: #fffdd0;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+    padding: 10px;
+}
+
+.img0 {
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.det {
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .tabs a {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1.75rem;
+    }
+
+    .det {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .name {
+        font-size: 4rem;
+    }
+
+    .tabs a {
+        font-size: 1.75rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .det {
+        font-size: 1.5rem;
+    }
+}

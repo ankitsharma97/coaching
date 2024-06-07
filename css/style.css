@@ -1,0 +1,155 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    background: url('coaching-2738523_1280.jpg') no-repeat center center/cover;
+    padding: 10px;
+    color: rgb(54, 54, 222);
+}
+
+.img1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.img1:hover {
+    height: 150px;
+    width: 150px;
+    border: 2px solid red;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px;
+}
+
+.tabs a {
+    color: black;
+    text-decoration: dashed;
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+
+.tabs a:hover {
+    background-color: blue;
+    color: rgb(240, 240, 15);
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.child1,
+.child2 {
+    flex: 1 1 100%;
+    padding: 10px;
+}
+
+.child1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.child2 {
+    background-color: azure;
+    border-radius: 20px;
+    padding: 20px;
+    color: darkslategray;
+    font-size: 1rem;
+}
+
+.child3 {
+    background-color: rgb(89, 193, 231);
+    margin-top: 20px;
+    padding: 20px;
+    border: 4px solid rgb(45, 54, 59);
+    border-radius: 6px;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.Join {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(48, 36, 222);
+}
+
+.down {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(196, 178, 100);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .tabs a {
+        font-size: 1.5rem;
+    }
+
+    .child2 {
+        font-size: 1.25rem;
+    }
+
+    .Join {
+        font-size: 2rem;
+    }
+
+    .down {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .name {
+        font-size: 4rem;
+    }
+
+    .tabs a {
+        font-size: 1.75rem;
+    }
+
+    .child1,
+    .child2 {
+        flex: 1 1 50%;
+    }
+
+    .child2 {
+        font-size: 1.5rem;
+    }
+
+    .Join {
+        font-size: 2.5rem;
+    }
+
+    .down {
+        font-size: 1.5rem;
+    }
+}
